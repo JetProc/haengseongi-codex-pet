@@ -20,7 +20,7 @@ Codex 커스텀 펫은 로컬의 `${CODEX_HOME:-$HOME/.codex}/pets/<pet-name>/` 
 아래 명령을 터미널에서 실행합니다.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.1.3/install.sh | bash
 ```
 
 설치가 끝나면 Codex에서 `/pet`을 열고 `Refresh`를 누른 뒤 `행성이`를 선택하면 됩니다. 이미 `/pet` 창이 열려 있었다면 한 번 닫았다가 다시 열면 더 잘 갱신됩니다.
