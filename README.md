@@ -23,7 +23,7 @@ Codex 커스텀 펫은 로컬의 `${CODEX_HOME:-$HOME/.codex}/pets/<pet-name>/` 
 curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.1.3/install.sh | bash
 ```
 
-설치가 끝나면 Codex에서 `/pet`을 열고 `Refresh`를 누른 뒤 `행성이`를 선택하면 됩니다. 이미 `/pet` 창이 열려 있었다면 한 번 닫았다가 다시 열면 더 잘 갱신됩니다.
+설치가 끝나면 Codex에서 `/pet`을 열고 `Refresh`를 누른 뒤 `행성이`를 선택하면 됩니다. `/pet`이 바로 열리지 않거나 펫이 보이지 않는 경우에는 `Settings` -> `Appearance` 하단의 `Pets` 영역에서 `Wake Pet`을 누른 뒤 `Refresh`와 선택을 진행하면 됩니다.
 
 ## 수동 설치
 
@@ -45,6 +45,8 @@ curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.1.
 
 ## Codex에서 선택하기
 
+가장 빠른 방법은 `/pet` 명령을 쓰는 것입니다.
+
 1. Codex Desktop을 엽니다.
 2. 입력창에 `/pet`을 입력합니다.
 3. `Pets` 영역을 펼칩니다.
@@ -52,7 +54,14 @@ curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.1.
 5. 커스텀 목록에서 `행성이`를 선택합니다.
 6. 펫이 숨어 있다면 `Wake Pet`을 누릅니다.
 
-Codex가 이미 실행 중인 상태에서 파일을 복사했다면 바로 보이지 않을 수 있습니다. 이때는 `/pet`의 `Refresh`를 누르거나 Codex 앱을 재시작하면 됩니다.
+`/pet`이 뜨지 않거나 목록이 갱신되지 않는다면 설정 화면에서 직접 열 수 있습니다.
+
+1. Codex Desktop의 `Settings`를 엽니다.
+2. `Appearance`로 이동합니다.
+3. 하단의 `Pets` 영역에서 `Wake Pet`을 누릅니다.
+4. `Refresh`를 누른 뒤 `행성이`를 선택합니다.
+
+Codex가 이미 실행 중인 상태에서 파일을 복사했다면 바로 보이지 않을 수 있습니다. 이때는 `Refresh`를 누르거나 Codex 앱을 재시작하면 됩니다.
 
 ## 문제 해결
 
