@@ -3,7 +3,7 @@ set -euo pipefail
 
 PET_ID="haengseongi"
 DISPLAY_NAME="행성이"
-PET_VERSION="${HAENGSEONGI_PET_VERSION:-v0.1.3}"
+PET_VERSION="${HAENGSEONGI_PET_VERSION:-v0.1.4}"
 BASE_URL="${HAENGSEONGI_PET_BASE_URL:-https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/$PET_VERSION}"
 
 SCRIPT_SOURCE="${BASH_SOURCE[0]:-}"
