@@ -2,6 +2,8 @@
 
 손그림 행성 캐릭터 `행성이`를 Codex Desktop의 커스텀 pet으로 사용할 수 있게 만든 배포용 패키지입니다.
 
+`v0.2.0`부터는 허가받은 행성이 원본 포즈를 기준으로 행동별 프레임을 다시 구성했습니다.
+
 ![행성이 contact sheet](preview/contact-sheet.png)
 
 ## 📦 구성
@@ -20,7 +22,7 @@ Codex 커스텀 펫은 로컬의 `${CODEX_HOME:-$HOME/.codex}/pets/<pet-name>/` 
 아래 명령을 터미널에서 실행합니다.
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.1.4/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/v0.2.0/install.sh | bash
 ```
 
 설치가 끝나면 Codex에서 `/pet`을 열고 `Refresh`를 누른 뒤 `행성이`를 선택하면 됩니다. `/pet`이 바로 열리지 않거나 펫이 보이지 않는 경우에는 `Settings` -> `Appearance` 하단의 `Pets` 영역에서 `Wake Pet`을 누른 뒤 `Refresh`와 선택을 진행하면 됩니다.
@@ -90,6 +92,23 @@ spritesheet.webp
 ```
 
 스프라이트 파일은 Codex 펫 규격에 맞는 `1536x1872` 크기의 투명 배경 WebP입니다.
+
+## 🎨 이미지 제작 기준
+
+- 스타일 가이드: [`docs/style-guide.md`](docs/style-guide.md)
+- 추출한 원본 포즈 미리보기: [`preview/source-poses.png`](preview/source-poses.png)
+- Codex 펫 규격 검증 결과: [`preview/validation.json`](preview/validation.json)
+
+원본 이미지 폴더가 있는 환경에서는 아래 명령으로 스프라이트시트와 프리뷰 이미지를 다시 만들 수 있습니다.
+
+```bash
+python3 tools/build_spritesheet.py \
+  --source-dir /path/to/haengseongi-images \
+  --pet-dir pets/haengseongi \
+  --preview-dir preview
+```
+
+생성 결과는 `pets/haengseongi/spritesheet.webp`, `preview/contact-sheet.png`, `preview/source-poses.png`에 반영됩니다.
 
 ## 🧹 삭제하기
 
