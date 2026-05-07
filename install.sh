@@ -5,8 +5,9 @@ PET_ID="haengseongi"
 DISPLAY_NAME="행성이"
 BASE_URL="${HAENGSEONGI_PET_BASE_URL:-https://raw.githubusercontent.com/JetProc/haengseongi-codex-pet/main}"
 
-if [[ -n "${BASH_SOURCE[0]:-}" && -f "${BASH_SOURCE[0]}" ]]; then
-  SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+SCRIPT_SOURCE="${BASH_SOURCE[0]:-}"
+if [[ -n "$SCRIPT_SOURCE" && -f "$SCRIPT_SOURCE" ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "$SCRIPT_SOURCE")" && pwd)"
 else
   SCRIPT_DIR=""
 fi
